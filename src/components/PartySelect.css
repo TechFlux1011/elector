@@ -1,0 +1,91 @@
+.party-select {
+  min-height: 100vh;
+  padding: 2rem;
+  max-width: 56rem;
+  margin: 0 auto;
+}
+
+.party-select__back {
+  background: none;
+  border: none;
+  color: #94a3b8;
+  font-size: 0.9375rem;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  padding: 0.25rem 0;
+}
+
+.party-select__back:hover {
+  color: #e2e8f0;
+}
+
+.party-select__title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+}
+
+.party-select__hint {
+  color: #94a3b8;
+  font-size: 0.9375rem;
+  margin: 0 0 1.5rem;
+}
+
+.party-select__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.party-select__card {
+  padding: 1rem;
+  border: 2px solid #334155;
+  border-radius: 8px;
+  background: #0f172a;
+  color: #e2e8f0;
+  cursor: pointer;
+  text-align: left;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.party-select__card:hover {
+  border-color: var(--party-color, #475569);
+  box-shadow: 0 0 0 1px var(--party-color, #475569);
+}
+
+.party-select__card--selected {
+  border-color: var(--party-color);
+  box-shadow: 0 0 0 2px var(--party-color);
+}
+
+.party-select__name {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.party-select__caucus {
+  font-size: 0.75rem;
+  color: #94a3b8;
+}
+
+.party-select__next {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0a1628;
+  background: #e2e8f0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.party-select__next:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.party-select__next:not(:disabled):hover {
+  background: #cbd5e1;
+}
